@@ -54,6 +54,10 @@
     }
     .app-label{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
     .app h3{font-size:22px;margin:6px 0 8px}
+    .app-shot{
+      display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;
+      margin:14px 0 16px;border:1px solid var(--line);border-radius:9px;background:#eef2f7;
+    }
     .app p{color:#64748b;font-size:14px;margin:0 0 20px;min-height:65px}
     .actions{display:flex;gap:9px;flex-wrap:wrap}
     .btn{
@@ -119,10 +123,22 @@
           <article class="app">
             <div class="app-label">Available now</div>
             <h3>TGG Grid</h3>
+            <img class="app-shot" src="https://mikejamesgreco.github.io/tgg-grid/screenshot.jpeg" alt="TGG Grid application screenshot" loading="lazy">
             <p>The Greco Grid is a local-first browser workspace for editing, analyzing, validating, and visualizing CSV data.</p>
             <div class="actions">
               <a class="btn primary" href="/tgg-grid/">Launch TGG Grid</a>
               <a class="btn" href="https://github.com/mikejamesgreco/tgg-grid#readme" target="_blank" rel="noopener noreferrer">README / Source ↗</a>
+            </div>
+          </article>
+
+          <article class="app">
+            <div class="app-label">Available now</div>
+            <h3>TGDS Data Scope</h3>
+            <img class="app-shot" src="https://mikejamesgreco.github.io/tgds-scope/screenshot.jpeg" alt="TGDS Data Scope application screenshot" loading="lazy">
+            <p>The Greco Data Scope monitors a changing CSV as live data, with system-time visualization, multiple series, statistics, and scope-style views.</p>
+            <div class="actions">
+              <a class="btn primary" href="/tgds-scope/">Launch TGDS Data Scope</a>
+              <a class="btn" href="https://github.com/mikejamesgreco/tgds-scope#readme" target="_blank" rel="noopener noreferrer">README / Source ↗</a>
             </div>
           </article>
 
