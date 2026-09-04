@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFLA — Single-File Local Applications</title>
+  <meta name="description" content="Single-File Local Applications: useful browser applications designed to run locally, keep user data under user control, and minimize runtime dependencies.">
+  <meta name="author" content="Mike Greco">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://mikejamesgreco.github.io/">
+  <meta property="og:title" content="SFLA — Single-File Local Applications">
+  <meta property="og:description" content="Local-first browser applications built to be simple, portable, and useful.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mikejamesgreco.github.io/">
+  <style>
+    *{box-sizing:border-box}
+    :root{
+      --bg:#f4f6f8;--card:#fff;--text:#172033;--muted:#64748b;
+      --line:#dce3eb;--accent:#2563eb;--accent2:#1d4ed8;--soft:#eff6ff;
+    }
+    body{
+      margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);
+      color:var(--text);line-height:1.55;
+    }
+    .shell{max-width:1120px;margin:auto;padding:28px 20px 48px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:24px;
+      padding:8px 2px 26px;border-bottom:1px solid var(--line);
+    }
+    .brand{font-size:15px;font-weight:800;letter-spacing:.02em}
+    .brand span{display:block;font-size:11px;color:var(--muted);font-weight:600;margin-top:2px}
+    nav{display:flex;gap:16px;flex-wrap:wrap}
+    nav a,.text-link{color:var(--muted);font-size:13px;font-weight:700;text-decoration:none}
+    nav a:hover,.text-link:hover{color:var(--accent);text-decoration:underline}
+    .hero{padding:68px 0 50px;max-width:830px}
+    .eyebrow{
+      display:inline-block;padding:5px 9px;border:1px solid #bfdbfe;border-radius:999px;
+      background:var(--soft);color:#1e40af;font-size:11px;font-weight:800;
+      text-transform:uppercase;letter-spacing:.06em;
+    }
+    h1{font-size:48px;line-height:1.05;letter-spacing:-.04em;margin:18px 0 18px}
+    .hero p{font-size:18px;color:#475569;max-width:760px;margin:0}
+    .principles{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+    .pill{font-size:12px;font-weight:700;color:#475569;background:#fff;border:1px solid var(--line);padding:7px 10px;border-radius:8px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:16px 0}
+    h2{font-size:20px;margin:0}
+    .section-head p{margin:0;color:var(--muted);font-size:13px}
+    .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+    .app{
+      background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;
+      box-shadow:0 5px 18px rgba(15,23,42,.045);
+    }
+    .app-label{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+    .app h3{font-size:22px;margin:6px 0 8px}
+    .app p{color:#64748b;font-size:14px;margin:0 0 20px;min-height:65px}
+    .actions{display:flex;gap:9px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:8px 12px;border-radius:8px;font-size:12px;
+      font-weight:800;text-decoration:none;border:1px solid var(--line);color:#334155;background:#fff;
+    }
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+    .btn.primary:hover{background:var(--accent2)}
+    .btn:not(.primary):hover{border-color:#94a3b8}
+    .coming{border-style:dashed;background:#fafbfc}
+    .coming .app-label{color:#94a3b8}
+    .about{
+      margin-top:44px;padding:26px;background:#fff;border:1px solid var(--line);
+      border-radius:14px;
+    }
+    .about h2{margin-bottom:8px}
+    .about p{margin:0;color:#64748b;font-size:14px;max-width:850px}
+    footer{
+      margin-top:42px;padding-top:20px;border-top:1px solid var(--line);
+      display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+      color:#94a3b8;font-size:11px;
+    }
+    footer a{color:#64748b;text-decoration:none;font-weight:700}
+    footer a:hover{color:var(--accent);text-decoration:underline}
+    @media(max-width:650px){
+      h1{font-size:38px}.hero{padding-top:46px}
+      header{align-items:flex-start;flex-direction:column;gap:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand">SFLA<span>Single-File Local Applications</span></div>
+      <nav aria-label="Primary">
+        <a href="#applications">Applications</a>
+        <a href="#about">About SFLA</a>
+        <a href="https://github.com/mikejamesgreco" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <span class="eyebrow">Local-first software</span>
+        <h1>Useful applications.<br>Simple architecture.</h1>
+        <p>SFLA is a collection of browser applications designed around a simple idea: useful software can run locally, keep your files under your control, and avoid an unnecessary runtime dependency chain.</p>
+        <div class="principles">
+          <span class="pill">Local-first</span>
+          <span class="pill">Browser-native</span>
+          <span class="pill">User-owned files</span>
+          <span class="pill">Portable</span>
+          <span class="pill">Minimal runtime dependencies</span>
+        </div>
+      </section>
+
+      <section id="applications">
+        <div class="section-head">
+          <div><h2>Applications</h2></div>
+          <p>Launch an application or explore its source and documentation.</p>
+        </div>
+
+        <div class="apps">
+          <article class="app">
+            <div class="app-label">Available now</div>
+            <h3>TGG Grid</h3>
+            <p>The Greco Grid is a local-first browser workspace for editing, analyzing, validating, and visualizing CSV data.</p>
+            <div class="actions">
+              <a class="btn primary" href="/tgg-grid/">Launch TGG Grid</a>
+              <a class="btn" href="https://github.com/mikejamesgreco/tgg-grid#readme" target="_blank" rel="noopener noreferrer">README / Source ↗</a>
+            </div>
+          </article>
+
+          <article class="app coming">
+            <div class="app-label">More to come</div>
+            <h3>Future SFLAs</h3>
+            <p>Additional focused, local-first browser tools can live here while remaining independent applications and repositories.</p>
+            <div class="actions">
+              <a class="btn" href="https://github.com/mikejamesgreco?tab=repositories" target="_blank" rel="noopener noreferrer">Browse repositories ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2>What is an SFLA?</h2>
+        <p><strong>Single-File Local Application</strong> is the architectural approach used here: a self-contained browser application intended to be easy to run, move, inspect, and preserve. The emphasis is on local-first operation, browser-native capabilities, user-controlled data, and a deliberately small software supply chain. Individual applications may contact external services only when a feature explicitly requires it.</p>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 mikejamesgreco.me LLC. All rights reserved.</span>
+      <span><a href="https://github.com/mikejamesgreco" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
+    </footer>
+  </div>
+</body>
+</html>
