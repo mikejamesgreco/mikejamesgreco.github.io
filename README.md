@@ -29,6 +29,29 @@ https://mikejamesgreco.github.io/tgg-grid/
 **Source and documentation:**  
 https://github.com/mikejamesgreco/tgg-grid
 
+### TGDS Data Scope — The Greco Data Scope
+
+A local-first browser data scope for monitoring a changing CSV as live data,
+with system-time visualization, multiple series, statistics, and scope-style
+views.
+
+**Launch:**  
+https://mikejamesgreco.github.io/tgds-scope/
+
+**Source and documentation:**  
+https://github.com/mikejamesgreco/tgds-scope
+
+### TGJVM Monitor — The Greco JVM Monitor
+
+A lightweight browser-based JVM monitoring workspace using standard JDK
+diagnostic tools and a small local PowerShell bridge.
+
+**Launch:**  
+https://mikejamesgreco.github.io/tgjvm-monitor/
+
+**Source and documentation:**  
+https://github.com/mikejamesgreco/tgjvm-monitor
+
 More SFLAs will be added as they are developed.
 
 ## Design Principles
