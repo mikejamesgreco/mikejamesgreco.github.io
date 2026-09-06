@@ -1,20 +1,47 @@
 <!doctype html>
-<!DOCTYPE html>
 
 <html lang="en">
 <head>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5394262346219222"></script>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>SFLA — Single-File Local Applications</title>
-<meta content="Single-File Local Applications: useful browser applications designed to run locally, keep user data under user control, and minimize runtime dependencies." name="description"/>
+<title>SFLA — Local-First Browser Applications | Single-File Local Apps</title>
+<meta content="Free local-first browser applications for CSV editing and analysis, password management, JVM monitoring, weather, Roku control, games, and more. No installation required." name="description"/>
 <meta content="Mike Greco" name="author"/>
 <meta content="index,follow" name="robots"/>
 <link href="https://mikejamesgreco.github.io/" rel="canonical"/>
-<meta content="SFLA — Single-File Local Applications" property="og:title"/>
-<meta content="Local-first browser applications built to be simple, portable, and useful." property="og:description"/>
+<meta content="SFLA — Local-First Browser Applications" property="og:title"/>
+<meta content="Free local-first browser applications for data, password management, system monitoring, weather, Roku control, games, and more." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://mikejamesgreco.github.io/" property="og:url"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="SFLA — Local-First Browser Applications" name="twitter:title"/>
+<meta content="Free local-first browser applications designed around user-owned files, portability, and minimal runtime dependencies." name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"SFLA - Single-File Local Applications",
+  "alternateName":"Single-File Local Applications",
+  "url":"https://mikejamesgreco.github.io/",
+  "description":"A collection of free local-first browser applications designed around user-owned files, portability, browser-native capabilities, and minimal runtime dependencies.",
+  "author":{"@type":"Person","name":"Michael J. Greco","url":"https://github.com/mikejamesgreco"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebApplication","name":"TGG Grid","alternateName":"The Greco Grid","url":"https://mikejamesgreco.github.io/tgg-grid/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any modern web browser","description":"A local-first browser workspace for editing, analyzing, validating, and visualizing CSV data.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"WebApplication","name":"TGDS Data Scope","alternateName":"The Greco Data Scope","url":"https://mikejamesgreco.github.io/tgds-scope/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any modern web browser","description":"A local-first browser application for monitoring changing CSV data with system-time visualization, multiple series, statistics, and scope-style views.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"WebApplication","name":"TGJVM Monitor","alternateName":"The Greco JVM Monitor","url":"https://mikejamesgreco.github.io/tgjvm-monitor/","applicationCategory":"DeveloperApplication","operatingSystem":"Modern web browser with local PowerShell bridge","description":"A lightweight browser-based JVM monitoring workspace using standard JDK diagnostic tools and a small local PowerShell bridge.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"WebApplication","name":"TGPM - Password Manager","alternateName":"The Greco Password Manager","url":"https://mikejamesgreco.github.io/tgpm-password-manager/","applicationCategory":"SecurityApplication","operatingSystem":"Any modern web browser","description":"A local-first password manager with a portable encrypted vault, separate Recovery Key, and no account or application server required.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"VideoGame","name":"TGMD - Missile Defense","alternateName":"The Greco Missile Defense","url":"https://mikejamesgreco.github.io/tgmd-missile-defense/","gamePlatform":"Web browser","description":"A browser game where local user images become incoming targets in a missile-defense style game.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"WebApplication","name":"TGW Weather","alternateName":"The Greco Weather","url":"https://mikejamesgreco.github.io/tgw-weather/","applicationCategory":"WeatherApplication","operatingSystem":"Any modern web browser","description":"A browser application that compares daily forecasts from multiple weather providers and presents a simple consensus.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},
+    {"@type":"WebApplication","name":"TGRCL Roku Channel Launcher","alternateName":"The Greco Roku Channel Launcher","url":"https://mikejamesgreco.github.io/tgrcl-roku-channel-launcher/","applicationCategory":"UtilitiesApplication","operatingSystem":"Modern web browser with local PowerShell bridge","description":"A local Roku workspace for discovering devices, launching installed channels, remote controls, and household activity monitoring.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  ]
+}
+</script>
 <style>
     *{box-sizing:border-box}
     :root{
@@ -78,6 +105,11 @@
     }
     .about h2{margin-bottom:8px}
     .about p{margin:0;color:#64748b;font-size:14px;max-width:850px}
+    .about p + p{margin-top:12px}
+    .about h3{font-size:16px;margin:22px 0 6px}
+    .seo-intro{margin:0 0 42px;padding:24px 26px;background:#fff;border:1px solid var(--line);border-radius:14px}
+    .seo-intro h2{margin:0 0 8px}
+    .seo-intro p{margin:0;color:#64748b;font-size:14px;max-width:900px}
     footer{
       margin-top:42px;padding-top:20px;border-top:1px solid var(--line);
       display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
@@ -114,6 +146,10 @@
 <span class="pill">Portable</span>
 <span class="pill">Minimal runtime dependencies</span>
 </div>
+</section>
+<section class="seo-intro" aria-labelledby="local-apps-heading">
+<h2 id="local-apps-heading">Local-first browser applications with no installation</h2>
+<p>SFLA brings together free browser-based applications for CSV editing and data analysis, password management, JVM monitoring, weather comparison, Roku control, and games. The applications emphasize local-first operation, user-owned files, portability, browser-native capabilities, and a deliberately small runtime dependency chain.</p>
 </section>
 <section id="applications">
 <section class="app-section" id="productivity">
@@ -226,8 +262,18 @@
 </section>
 </section>
 <section class="about" id="about">
-<h2>What is an SFLA?</h2>
-<p><strong>Single-File Local Application</strong> is the architectural approach used here: a self-contained browser application intended to be easy to run, move, inspect, and preserve. The emphasis is on local-first operation, browser-native capabilities, user-controlled data, and a deliberately small software supply chain. Individual applications may contact external services only when a feature explicitly requires it.</p>
+<h2>What is a Single-File Local Application?</h2>
+<p><strong>Single-File Local Application (SFLA)</strong> is the architectural approach used here: a self-contained browser application intended to be easy to run, move, inspect, and preserve. The emphasis is on local-first operation, browser-native capabilities, user-controlled data, and a deliberately small software supply chain.</p>
+<h3>Why local-first browser applications?</h3>
+<p>A local-first application can perform much of its work directly in the browser instead of requiring an application server for every operation. For tools that work with user-owned files, this can keep the normal workflow close to the user and make the application easier to move, preserve, and understand.</p>
+<h3>Do SFLA applications upload my files?</h3>
+<p>Ordinary local-file workflows are designed to remain local unless an application feature explicitly needs to communicate with an external service. Individual SFLAs document those boundaries because some features, such as API calls or online weather data, inherently require network access.</p>
+<h3>Do I need to install anything?</h3>
+<p>Most SFLAs are designed to run directly in a modern browser from a hosted page or standalone HTML file. A few applications that interact with local operating-system resources may use a small local bridge, and those applications identify that requirement in their documentation.</p>
+<h3>Can an SFLA run offline?</h3>
+<p>Applications whose features depend only on local browser capabilities can generally continue to operate without a remote application backend. Features that intentionally use internet services naturally require connectivity while those features are in use.</p>
+<h3>Are SFLA applications free?</h3>
+<p>The applications listed on this site are available to launch without an application subscription. Source and documentation links are provided with each application so visitors can inspect the projects and understand how they work.</p>
 </section>
 </main>
 <footer>
